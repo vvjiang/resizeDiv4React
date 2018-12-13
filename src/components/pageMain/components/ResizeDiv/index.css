@@ -1,0 +1,71 @@
+
+.container{
+  margin: 30px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 300px;
+}
+
+.left{
+  width: 500px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.left-top{
+  position: absolute;
+  top: 0;
+  bottom: 104px;
+  width: 100%;
+  background-color: lightblue;
+}
+
+.h-resize{
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 100px;
+  z-index: 1;
+  cursor: row-resize;
+  user-select: none;
+}
+
+.left-bottom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: lightgreen;
+}
+
+.v-resize{
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  background: #fff;
+  left: 500px;
+  z-index: 2;
+  cursor: col-resize;
+  user-select: none;
+}
+
+.right{
+  margin-left: 504px;
+  background-color: lightsalmon;
+  height: 100%;
+}
+
