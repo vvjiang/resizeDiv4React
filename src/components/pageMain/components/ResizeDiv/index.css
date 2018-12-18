@@ -31,6 +31,7 @@
   bottom: 104px;
   width: 100%;
   background-color: lightblue;
+  box-sizing: border-box;
 }
 
 .h-resize{
@@ -50,6 +51,7 @@
   width: 100%;
   height: 100px;
   background-color: lightgreen;
+  box-sizing: border-box;
 }
 
 .v-resize{
@@ -67,5 +69,6 @@
   margin-left: 504px;
   background-color: lightsalmon;
   height: 100%;
+  box-sizing: border-box;
 }
 

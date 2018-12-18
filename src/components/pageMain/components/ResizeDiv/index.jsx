@@ -141,9 +141,9 @@ export default class ResizeDiv extends Component {
         <div id='v_resize_container' className={styles['content']} onMouseMove={this.vResizeOver}>
           <div id='h_resize_container' style={{ width: this.state.vNum, cursor: vCursor }} className={styles['left']}
             onMouseMove={this.hResizeOver}>
-            <div style={{ bottom: this.state.hNum, cursor: hCursor }} className={styles['left-top']}>aasd</div>
+            <div style={{ bottom: this.state.hNum + 4, cursor: hCursor }} className={styles['left-top']}>aasd</div>
             <div style={{ bottom: this.state.hNum, backgroundColor: hColor }} draggable={false} onMouseDown={this.hResizeDown} className={styles['h-resize']} />
-            <div style={{ height: this.state.hNum + 4, cursor: hCursor }} className={styles['left-bottom']}>asd</div>
+            <div style={{ height: this.state.hNum, cursor: hCursor }} className={styles['left-bottom']}>asd</div>
           </div>
           <div style={{ left: this.state.vNum, backgroundColor: vColor }} draggable={false} onMouseDown={this.vResizeDown} className={styles['v-resize']} />
           <div style={{ marginLeft: this.state.vNum + 4, cursor: vCursor }} className={styles['right']}>
