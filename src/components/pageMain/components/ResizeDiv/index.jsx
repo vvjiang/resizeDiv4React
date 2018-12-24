@@ -42,6 +42,17 @@ export default class ResizeDiv extends Component {
     this.resizeOffsetInfo = this.getEleOffset(hEle)
     this.leftHeight = hEle.offsetHeight
     this.containerWidth = document.getElementById('v_resize_container').offsetWidth
+
+    if (hEle.offsetHeight - this.state.hNum < this.state.hNumLimit) {
+      this.setState({
+        hNum: hEle.offsetHeight - this.state.hNumLimit
+      })
+    }
+    if (this.containerWidth - this.state.vNum < this.state.vNumLimit) {
+      this.setState({
+        vNum: this.containerWidth - this.state.vNumLimit
+      })
+    }
   }
 
   /**
