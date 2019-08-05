@@ -1,7 +1,6 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const webpack = require('webpack');
 
 module.exports = merge(common, {
@@ -18,7 +17,6 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
-    new BundleAnalyzerPlugin({ analyzerPort: 8919 }),
     // new webpack.optimize.CommonsChunkPlugin({
     //   names: ['vendor'],
     //   minChunks: Infinity,
