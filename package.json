@@ -60,6 +60,6 @@
     "redux-promise": "0.6.0",
     "redux-thunk": "2.3.0",
     "underscore": "^1.9.1",
-    "webpack": "4.19.0"
+    "webpack": "5.94.0"
   }
 }
